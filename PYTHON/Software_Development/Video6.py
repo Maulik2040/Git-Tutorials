@@ -1,0 +1,20 @@
+from tkinter import *
+root = Tk()
+root.geometry("655x333")
+def hello():
+    print('Hello Tkinter Buttons')
+def name():
+    print('My name is Maulik Mishra')
+frame = Frame(root, borderwidth=6, bg='grey', relief=SUNKEN)
+frame.pack(side=LEFT, anchor='nw')
+b1 = Button(frame, fg='red', text='Print Now', command=hello)
+b1.pack(side=LEFT, padx=23)
+b1 = Button(frame, fg='red', text='Print Now', command=name)
+b1.pack(side=LEFT, padx=23)
+b1 = Button(frame, fg='red', text='Print Now')
+b1.pack(side=LEFT, padx=23)
+b1 = Button(frame, fg='red', text='Print Now')
+b1.pack(side=LEFT, padx=23)
+b1 = Button(frame, fg='red', text='Print Now')
+b1.pack(side=LEFT, padx=23)
+root.mainloop()

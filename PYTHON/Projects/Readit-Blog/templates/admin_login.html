@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readit Blog | Admin Login</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        border: 2px solid white;
+    }
+    .text-center{
+        text-align: center;
+    }
+
+    .text-bold{
+        font-weight: bold;
+    }
+    nav {
+        background-color: rgb(140, 140, 253);
+        position: relative;
+        height: 56px;
+        border: 2px solid black;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 26px;
+        position: relative;
+        top: -40px;
+        padding: 30px;
+        left: 21px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+       
+    }
+
+    nav ul li a:hover{
+        color: black;
+
+    }
+
+    .n-img {
+        filter: invert(1);
+        height: 39px;
+        position: relative;
+        left: 12px;
+        top: 7px;
+    }
+
+    .copy {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 25px;
+            position: relative;
+            top: 73px;
+    }
+
+    input {
+        display: flex;
+        position: relative;
+        left: 11px;
+        top: 47px;
+        margin: 20px;
+        padding: 10px;
+        width: 247px;
+        font-size: 20px;
+        outline: none;
+        border: 2px solid black;
+        border-radius: 7px;
+    }
+
+    #btn {
+        position: relative;
+        top: 61px;
+        left: 125px;
+        text-align: center;
+        padding: 9px;
+        width: 69px;
+        font-size: 17px;
+        height: 38px;
+        color: white;
+        background-color: #009696;
+        border: 2px solid black;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    button p{
+        position: relative;
+        top: -2px;
+    }
+
+    form {
+        background-color: #7878c3;
+        height: 321px;
+        width: 334px;
+        position: relative;
+        left: 426px;
+        top: 159px;
+    }
+
+    .h1 {
+        position: relative;
+        text-align: center;
+        top: 83px;
+        font-size: 3rem;
+    }
+
+    form {
+        background-color: #7878c3;
+        height: 321px;
+        width: 334px;
+        position: relative;
+        left: 409px;
+        top: 145px;
+        border-radius: 13px;
+    }
+</style>
+
+<script>
+    let showAlert = ()=>{
+        alert("Admin mode Enabled Successfully")
+    }
+</script>
+
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <ul>
+            <img class="n-img" src="../static/img/logo.png">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+    </nav>
+
+    <h1 class="h1">Login To Dashboard</h1>
+    <form method="post" action="/admin-login/" class="main-form">
+        <input type="text" name="username" id="username" placeholder="Username">
+        <input type="password" name="password" id="password" placeholder="Passowrd">
+        <button class="btn" id="btn" type="submit"><p>Login</p></button>
+    </form>
+</body>
+</html>

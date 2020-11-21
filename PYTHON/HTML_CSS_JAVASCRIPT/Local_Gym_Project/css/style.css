@@ -1,0 +1,70 @@
+/* Css Reset */
+
+.navbar {
+    position: sticky;
+}
+
+.navbar ul {
+    display: block;
+    background-color: blueviolet;
+    border-radius: 33px;
+    margin: 12px auto;
+}
+
+.navbar ul li {
+    float: left;
+    margin: 15px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    font-weight: bold;
+    padding: 1px 1px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.gym {
+    display: block;
+    position: absolute;
+    top: 21px;
+    height: 35px;
+    left: 1090px;
+}
+
+.header {
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    color: chocolate;
+}
+
+.bg {
+    position: relative;
+    left: 110px;
+    height: 283px;
+    top: -41px;
+}
+
+.FormHeading {
+    position: relative;
+    left: 313px;
+    font-style: italic;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.bg2 {
+    position: relative;
+    bottom: -407px;
+    left: -391px;
+    height: 369px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readit Blog | About</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            border: 2px solid white;
+        }
+        .text-center{
+            text-align: center;
+        }
+
+        .text-bold{
+            font-weight: bold;
+        }
+        nav {
+            background-color: rgb(140, 140, 253);
+            position: relative;
+            height: 56px;
+            border: 2px solid black;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 26px;
+            position: relative;
+            top: -40px;
+            padding: 30px;
+            left: 21px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+           
+        }
+
+        nav ul li a:hover{
+            color: black;
+
+        }
+
+        .n-img {
+            filter: invert(1);
+            height: 39px;
+            position: relative;
+            left: 12px;
+            top: 7px;
+        }
+
+        .about-s1{
+            background: url("../static/img/about-us-s1.jpg") no-repeat center center/cover;
+            height: 543px;
+            border: 2px solid white;
+        }
+
+        .about-s1-h {
+            color: white;
+            position: relative;
+            font-size: 6rem;
+            top: 230px;
+            text-align: center;
+        }
+
+        .main-p {
+            text-align: center;
+            color: white;
+            position: relative;
+            top: 158px;
+            font-size: 3rem;
+        }
+
+
+        .main{
+            background: url("../static/img/about-us-s2.jpg") no-repeat center center/cover;
+            height: 510px;
+            border: 2px solid white;
+        }
+
+        .copy {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 25px;
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <ul>
+            <img class="n-img" src="../static/img/logo.png">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+    </nav>
+
+    <section class="about-s1">
+        <h1 class="about-s1-h">About Us</h1>
+    </section>
+
+    <section class="main">
+        <p class="main-p">Readit it Blog is an online web application which allows you to post post your blogs.</p>
+    </section>
+
+    <section class="copy">
+        <p>Copyright &copy; www.ReaditBlog.com 2020 All rights | reserved</p>
+    </section>
+
+    </body>
+</html>

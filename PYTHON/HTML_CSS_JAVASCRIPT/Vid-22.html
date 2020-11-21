@@ -1,0 +1,57 @@
+<DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewreport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X UA-Compatible" content="ie=edge">
+    <title>Pseudo Selectors and more Designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(233, 245, 201);
+            padding: 34px;
+            margin: 34px;
+            width: 666px;
+            margin: auto;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: black;
+            background-color: orange;
+        }
+        a:visited{
+            color: yellow;
+        }
+        a:active{
+            background: darkblue;
+        }
+        .btn{
+            background-color: red; 
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            font-weight: bold;
+            color: blue;
+            background-color: yellow;
+            border: 2px solid pink;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container" id="cont1">
+    <h2>This is the Heading</h2>
+    <p>This is the Paragraph</p>
+    <a href="https://yahoo.com" class="btn">Read More</a>
+    <button class="btn">Contact Us</button>
+</div>
+</body>
+</html>

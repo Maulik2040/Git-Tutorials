@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readit Blog | {{post.sno}}</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            border: 2px solid white;
+        }
+        .text-center{
+            text-align: center;
+        }
+
+        .text-bold{
+            font-weight: bold;
+        }
+        nav {
+            background-color: rgb(140, 140, 253);
+            position: relative;
+            height: 56px;
+            border: 2px solid black;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 26px;
+            position: relative;
+            top: -40px;
+            padding: 30px;
+            left: 21px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+           
+        }
+
+        nav ul li a:hover{
+            color: black;
+
+        }
+
+        .n-img {
+            filter: invert(1);
+            height: 39px;
+            position: relative;
+            left: 12px;
+            top: 7px;
+        }
+
+        input, textarea {
+            display: flex;
+            width: 55%;
+            position: relative;
+            top: 111px;
+            margin: 23px;
+            padding: 10px;
+            font-size: 20px;
+            left: 231px;
+            border: 2px solid black;
+            border-radius: 9px;
+            outline: none;
+        }
+        .btn {
+            position: relative;
+            left: 545px;
+            top: 107px;
+            padding: 8px;
+            width: 71px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 5px;
+            font-size: 17px;
+            outline: none;
+            background-color: #acacd0;
+            color: white;
+            cursor: pointer;
+        }
+
+        .copy {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 25px;
+            position: relative;
+            top: 252px;
+        }
+
+        
+        .h1 {
+            text-align: center;
+            position: relative;
+            top: 63px;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <ul>
+            <img class="n-img" src="../static/img/logo.png">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+    </nav>
+
+    <section class="post-blog">
+        <form action="/edit/{{sno}}" method="post">
+            <h1 class="h1">Add/Edit Post</h1>
+            <input type="text" name="name" id="name" placeholder="Enter your name" value="{{post.title}}">
+            <input type="text" name="title" id="title" placeholder="Enter the Title For your Blog" value="{{post.name}}">
+            <input type="text" name="slug" id="slug" placeholder="Enter the Slug For your Blog" value="{{post.slug}}">
+            <textarea name="content" id="content" cols="30" rows="10" placeholder="Enter the Content">{{post.content}}</textarea>
+            <button class="btn" id="btn" type="submit">Post</button>
+        </form>
+    </section>
+
+    <section class="copy">
+        <p>Copyright &copy; www.ReaditBlog.com 2020 All rights | reserved</p>
+    </section>
+</body>
+</html>

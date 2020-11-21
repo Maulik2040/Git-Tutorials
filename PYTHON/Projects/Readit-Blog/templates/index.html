@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readit Blog | Home</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            border: 2px solid white;
+        }
+        .text-center{
+            text-align: center;
+        }
+
+        .text-bold{
+            font-weight: bold;
+        }
+        nav {
+            background-color: rgb(140, 140, 253);
+            position: relative;
+            height: 56px;
+            border: 2px solid black;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 26px;
+            position: relative;
+            top: -40px;
+            padding: 30px;
+            left: 21px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+           
+        }
+
+        nav ul li a:hover{
+            color: black;
+
+        }
+
+        .n-img {
+            filter: invert(1);
+            height: 39px;
+            position: relative;
+            left: 12px;
+            top: 7px;
+        }
+
+        .welcome-s{
+            background: url("../static/img/home-welcome.jpg") no-repeat center center/cover;
+            color: white;
+            height: 568px;
+            text-align: center;
+            border: 2px solid white;
+            
+        }
+
+        .welcome-s-h {
+            position: relative;
+            top: 233px;
+            font-size: 4rem;
+        }
+
+        .f1-card{
+            border: 2px solid black;
+            width: 12px;
+        }
+
+        .welcome-s-p {
+            color: white;
+            position: relative;
+            text-align: center;
+            left: -8px;
+            top: 223px;
+            font-size: 2rem;
+        }
+
+        #section2{
+            background: url("../static/img/home-secton2.jpg") no-repeat center center/cover;
+            border: 2px solid white;
+            height: 467px;
+            color: white;
+        }
+
+        .section2-h{
+            position: relative;
+            top: 182px;
+            font-size: 4rem;
+        }
+
+    
+        .copy {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        #btn {
+            position: relative;
+            top: 281px;
+            left: -31px;
+            padding: 7px;
+            width: 85px;
+            color: white;
+            background: none;
+            outline: none;
+            border: 2px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+
+        #btn2 {
+            position: relative;
+            top: 280px;
+            left: -3px;
+            padding: 10px;
+            background: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 9px;
+            cursor: pointer;
+            outline: none;
+            font-weight: bold;
+        }
+
+        #btn:hover{
+            color: black;
+            background-color: rgb(243, 219, 187);
+        }
+
+        #btn2:hover{
+            color: black;
+            background-color: rgb(243, 219, 187);
+        }
+
+        button{
+            position: relative;
+            top: 13px;
+        }
+        
+    </style>
+
+    <script>
+
+    </script>
+</head>
+<body>
+    <header>
+
+        <nav class="navbar" id="navbar">
+            <ul>
+                <img class="n-img" src="../static/img/logo.png">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+        </nav>
+
+        <section class="welcome-s" id="welcome-s">
+            <h1 class="welcome-s-h">Welcome to {{params["Blog_Name"]}}</h1>
+            <p class="welcome-s-p">Show your Blog Skills here</p>
+            <a href="/post"><button class="btn" id="btn">Post Blog</button></a>
+            <a href="/dashboard"><button class="btn" id="btn2">Dashboard</button></a>
+        </section>
+
+        <section class="section2" id="section2">
+            <h1 class="section2-h text-center">Take your thoughts higher than the mountains</h1>
+        </section>
+    </header>
+
+    <footer>
+
+        <section class="copy">
+            <p>Copyright &copy; www.ReaditBlog.com 2020 All rights | reserved</p>
+        </section>
+    </footer>
+</body>
+</html>

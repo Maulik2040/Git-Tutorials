@@ -1,0 +1,2 @@
+Ma'm, to run this program you have install python interpreter first. After your .exe file is installed, run it and click the option 
+"ADD PYTHON TO PATH", after python is installed, go to windows powershell and type "pip install pygame" and then you will be able to run this program.

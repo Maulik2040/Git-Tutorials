@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Blog | Login</title>
+    <style>
+        body{
+            overflow: hidden;
+            background-color: red;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .login-h{
+            text-align: center;
+            color: white;
+            position: relative;
+            top: 91px;
+            font-size: 3rem;
+            left: 5px;
+
+        }
+        ._section{
+            display: inline;
+            background-color: 2px solid white;
+        }
+
+        form{
+            background-color: #ccc4c4;            
+            height: 382px;
+            width: 302px;
+            margin: auto;
+            position: relative;
+            top: 144px;
+            border-radius: 24px;
+        }
+        
+        input {
+            display: flex;
+            margin: 26px;
+            position: relative;
+            left: 4%;
+            top: 79px;
+            padding: 8px;
+            width: 206px;
+            font-size: 104%;
+            outline: none;
+            border: 2px solid black;
+            border-radius: 9px;
+        }
+        .img{
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.9;
+            height: 100%;
+        }
+        .btn {
+            position: relative;
+            top: 98px;
+            left: 108px;
+            padding: 9px;
+            color: white;
+            background-color: green;
+            outline: none;
+            border: 2px solid black;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 77px;
+        }
+        .para {
+            color: white;
+            position: relative;
+            top: 247px;
+            left: 432px;
+            font-size: 23px;
+        }
+
+        .para a{
+            color: lightgreen;
+        }
+
+        .para a:active{
+            color: lightgreen;
+        }
+
+        .main{
+            background: url(https://i0.wp.com/miaarabia.com/wp-content/uploads/2018/10/Full-HD-Wallpapers-13.jpg?ssl=1) no-repeat center center/cover;
+            height: 862px;
+            width: 100%;
+
+        }
+
+        @media screen and (max-width: 1170px) {
+            body{
+                background-color: green;
+            }
+        }
+
+
+    </style>
+<body>      
+    <div>
+
+        <section class="main">
+        <h1 class="login-h">Login to Clean Blog</h1>
+        <section class="_section">
+        <div class="container">
+            <form action="/" method="post" name="form">
+                <input type="text" name ="username" id="username" placeholder="Enter the Username">
+                <input type="password" name ="password" id="password" placeholder="Enter the Password">
+                <button class="btn" id="btn" type="submit">Login</button>
+            </form>
+            <p class="para">If you don't have an account, <a href="/signup">Sign Up</a></p>
+        </div>
+    </section>
+    </section>
+    </div>  
+</body>
+</html>

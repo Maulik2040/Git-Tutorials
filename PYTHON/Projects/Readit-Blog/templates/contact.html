@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readit Blog | Contact</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        border: 2px solid white;
+    }
+    .text-center{
+        text-align: center;
+    }
+
+    .text-bold{
+        font-weight: bold;
+    }
+    nav {
+        background-color: rgb(140, 140, 253);
+        position: relative;
+        height: 56px;
+        border: 2px solid black;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 26px;
+        position: relative;
+        top: -40px;
+        padding: 30px;
+        left: 21px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+       
+    }
+
+    nav ul li a:hover{
+        color: black;
+
+    }
+
+    .n-img {
+        filter: invert(1);
+        height: 39px;
+        position: relative;
+        left: 12px;
+        top: 7px;
+    }
+
+    #contact {
+        background: url(../static/img/contact-us.jpg) no-repeat center center/cover;
+        height: 517px;
+        text-align: center;
+        color: white;
+    }
+
+    .contact-h{
+        position: relative;
+        top: 185px;
+        font-size: 5rem;
+    }
+
+    input, textarea {
+        display: flex;
+        width: 237px;
+        margin: auto;
+        padding: 10px;
+        outline: none;
+        border: 2px solid black;
+        border-radius: 7px;
+    }
+
+    form {
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 134px;
+        background-color: rgb(145, 145, 250);
+        height: 422px;
+        left: 384px;
+        width: 341px;
+        padding-top: 50px;
+        border-radius: 25px;
+    }
+
+    #email {
+        top: 14px;
+        position: relative;
+    }
+
+    #Phone-no {
+        top: 29px;
+        position: relative;
+    }
+
+
+    #reason {
+        position: relative;
+        top: 52px;
+    }
+
+    .contact-form {
+        background: url(../static/img/contact-form.png);
+        height: 1000px;
+        border: 2px solid white;
+    }
+
+    .container{
+        position: relative;
+        top: 35px;
+    }
+
+    .contact-mainh {
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 83px;
+        font-size: 3rem;
+    }
+
+    .btn {
+        position: relative;
+        top: 72px;
+        left: 129px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 8px;
+        color: white;
+        background-color: coral;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .copy {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+    }
+
+   </style>
+
+   <script>
+       function showAlert() {
+           alert("Details Submitted Successfully")
+       }
+   </script>
+
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <ul>
+            <img class="n-img" src="../static/img/logo.png">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+    </nav>
+    <section class="contact" id="contact">
+        <h1 class="contact-h">Contact Us</h1>
+    </section>
+    <section class="contact-form" id="contact-form">
+        <h1 class="contact-mainh">Fill this form to contact us</h1>
+        <div class="container">
+            <form action="/contact" method="post">
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <input type="text" name="Phone-no" id="Phone-no" placeholder="Enter your phone number">
+                <textarea name="reason" id="reason" cols="30" rows="10" placeholder="Enter reason for contacting"></textarea>
+                <button type="submit" class="btn" id="btn" onclick="showAlert()">Submit</button>
+            </form>
+    
+        </div>
+    </section>
+    
+    <section class="copy">
+        <p>Copyright &copy; www.ReaditBlog.com 2020 All rights | reserved</p>
+    </section>
+    
+</body>
+</html>

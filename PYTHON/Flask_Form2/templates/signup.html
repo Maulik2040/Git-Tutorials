@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Blog | Sign Up</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .login-h{
+            text-align: center;
+            color: white;
+            position: relative;
+            top: 91px;
+            font-size: 3rem;
+            left: 5px;
+
+        }
+        ._section{
+            display: inline;
+            background-color: 2px solid white;
+        }
+
+        form{
+            background-color: #ccc4c4;            height: 382px;
+            width: 302px;
+            margin: auto;
+            position: relative;
+            top: 144px;
+            border-radius: 24px;
+        }
+        
+        input {
+            display: flex;
+            margin: 26px;
+            position: relative;
+            left: 4%;
+            top: 79px;
+            padding: 8px;
+            width: 206px;
+            font-size: 104%;
+            outline: none;
+            border: 2px solid black;
+            border-radius: 9px;
+        }
+        .img{
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.9;
+            height: 100%;
+        }
+
+        .btn {
+            position: relative;
+            top: 98px;
+            left: 112px;
+            padding: 9px;
+            color: white;
+            background-color: green;
+            outline: none;
+            border: 2px solid black;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .para {
+            color: white;
+            position: relative;
+            top: 247px;
+            left: 432px;
+            font-size: 23px;
+        }
+
+        .sign-p a{
+            color: lightgreen;
+        }
+
+        .sign-p a:active{
+            color: lightgreen;
+        }
+
+        .sign-p {
+            color: white;
+            position: relative;
+            top: 247px;
+            left: 432px;
+            font-size: 23px;
+        }
+
+        .sign-p a{
+            color: lightgreen;
+        }
+
+        .sign-p a:active{
+            color: lightgreen;
+        }
+    </style>
+<body>
+    <img class="img" src="https://i0.wp.com/miaarabia.com/wp-content/uploads/2018/10/Full-HD-Wallpapers-13.jpg?ssl=1" alt="image">
+    <h1 class="login-h">Sign Up to Clean Blog</h1>
+    <section class="_section">
+    <div class="container">
+        <form action="/signup" method="post" name="form">
+            <input type="text" name="name" id="name" placeholder="Enter your Name">
+            <input type="text" name ="username" id="username" placeholder="Username">
+            <input type="password" name ="password" id="password" placeholder="Password">
+            <button class="btn" id="btn" type="submit">Submit</button>
+        </form>
+        <p class="sign-p">Already have an account ? <a href="/">Login</a></p>
+    </div>
+</section>
+</body>
+</html>

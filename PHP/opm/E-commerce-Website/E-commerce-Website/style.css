@@ -1,0 +1,145 @@
+/* CSS Reset */
+
+*{
+    margin: 0;
+}
+
+/* CSS Variables */
+
+:root{
+    --navbar-height: 59;
+
+
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+
+}
+
+#logo{
+    margin: 10px 34px;
+    
+
+}
+
+#logo img{
+    height: 45px;
+    margin: 3px 6px;
+}
+
+
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+
+#navbar ul li{
+    
+
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+ 
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 300px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#home::before{
+    content: "";
+    background: url('Centre1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.89;
+    z-index: -1;
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Rowdies', cursive;}
+
+.h-primary{
+ 
+
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+
+.btn{
+    background-color: yellow;
+    padding: 13px;
+    border-color: rgb(0, 0, 0) ;
+    border-radius: 6px;
+    width: 130px;
+    font-size: 20px;
+    cursor: pointer;
+    
+  
+ 
+}
+
+.centre{
+    text-align: center;
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+
+#services.box {
+    border: 2pc solid black;
+
+}
+
+
+
+    
+
+
+

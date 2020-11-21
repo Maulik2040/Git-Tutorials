@@ -1,0 +1,9 @@
+setup.py
+PackageMaulik.egg-info/PKG-INFO
+PackageMaulik.egg-info/SOURCES.txt
+PackageMaulik.egg-info/dependency_links.txt
+PackageMaulik.egg-info/top_level.txt
+packageMaulik.egg-info/PKG-INFO
+packageMaulik.egg-info/SOURCES.txt
+packageMaulik.egg-info/dependency_links.txt
+packageMaulik.egg-info/top_level.txt
